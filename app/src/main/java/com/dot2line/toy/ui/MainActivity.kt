@@ -1,7 +1,8 @@
-package com.dot2line.toy
+package com.dot2line.toy.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dot2line.toy.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
