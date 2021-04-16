@@ -2,12 +2,12 @@ package com.dot2line.toy.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import com.dot2line.toy.databinding.HolderPokemonBinding
 import com.dot2line.toy.ui.model.PokemonUiModel
 
-class PokeAdapter : ListAdapter<PokemonUiModel, PokemonViewHolder>(diffCallback) {
+class PokeAdapter : PagingDataAdapter<PokemonUiModel, PokemonViewHolder>(diffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder =
         PokemonViewHolder(
@@ -19,7 +19,7 @@ class PokeAdapter : ListAdapter<PokemonUiModel, PokemonViewHolder>(diffCallback)
         )
 
     override fun onBindViewHolder(holder: PokemonViewHolder, position: Int) {
-        holder.onBind(getItem(position))
+        getItem(position)?.let(holder::onBind)
     }
 
     companion object {

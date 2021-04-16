@@ -7,11 +7,10 @@ import com.dot2line.toy.network.PokeService
 
 class PokeRepositoryImpl(private val pokeService: PokeService) : PokeRepository {
 
-    override suspend fun getImages(offset: Int): PokeResponse {
-        return pokeService.getImages(PER_PAGE, offset)
-    }
+    override suspend fun getImages(offset: Int): PokeResponse =
+        pokeService.getImages(PER_PAGE, offset)
 
     companion object {
-        const val PER_PAGE = 20
+        const val PER_PAGE = 50
     }
 }

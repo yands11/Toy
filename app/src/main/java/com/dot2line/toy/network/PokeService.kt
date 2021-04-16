@@ -5,6 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface PokeService {
+
     /**
      * @param limit     item count of list
      * @param offset    load items after offset
