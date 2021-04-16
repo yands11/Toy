@@ -11,6 +11,6 @@ data class PokemonUiModel(
 fun Pokemon.toUiModel(): PokemonUiModel =
     PokemonUiModel(
         id = id,
-        name = name,
+        name = name.capitalize(),
         imageUrl = imageUrl
     )

@@ -6,6 +6,7 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.paging.map
+import com.dot2line.toy.data.PokePagingSource
 import com.dot2line.toy.domain.GetPokeListUseCase
 import com.dot2line.toy.ui.model.toUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel

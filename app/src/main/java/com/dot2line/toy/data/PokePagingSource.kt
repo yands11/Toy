@@ -1,4 +1,4 @@
-package com.dot2line.toy.ui
+package com.dot2line.toy.data
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState

@@ -15,9 +15,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val decoration by lazy {
-        DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-    }
     private val adapter by lazy { PokeAdapter() }
     private val pokeViewModel: PokeViewModel by viewModels()
 
@@ -31,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.rvPokemon.run {
-            addItemDecoration(decoration)
             adapter = this@MainActivity.adapter
         }
     }
