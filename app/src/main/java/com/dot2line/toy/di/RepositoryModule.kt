@@ -1,6 +1,5 @@
 package com.dot2line.toy.di
 
-import com.dot2line.toy.MyApplication_HiltComponents
 import com.dot2line.toy.data.PokeRepositoryImpl
 import com.dot2line.toy.domain.PokeRepository
 import com.dot2line.toy.network.PokeService
