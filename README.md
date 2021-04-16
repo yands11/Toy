@@ -10,8 +10,8 @@
 * Retrofit2 (Gson converter) 
 * OkHttp3
 * Hilt 
+* ViewBinding
 * Lifecycle
-  * LiveData
   * ViewModel
 * Paging 3
 * Glide
